@@ -10,7 +10,7 @@ const Intro = () => {
     // console.log(textRef);
     init(textRef.current, {
       showCursor: true,
-      typeSpeed:  100,
+      typeSpeed: 100,
       backDelay: 1500,
       backSpeed: 50,
       strings: ["Developer", "Designer"],
