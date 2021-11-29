@@ -53,7 +53,7 @@ const Portfolio = () => {
 
   return (
     <div id="portfolio">
-      <h1>Porfolio</h1>
+      <h1>Portfolio</h1>
       <ul>
         {list.map((item) => (
           <PortfolioList
