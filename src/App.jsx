@@ -1,16 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./components/navbar/Navbar";
-import Intro from "./components/intro/Intro"
-import Portfolio from "./components/portfolio/Portfolio"
-import Works from "./components/works/Works"
-import Testimonials from "./components/testimonials/Testimonials"
-import Contact from "./components/contact/Contact"
-import './app.scss'
+import Menu from "./components/menu/Menu";
+import Intro from "./components/intro/Intro";
+import Portfolio from "./components/portfolio/Portfolio";
+import Works from "./components/works/Works";
+import Testimonials from "./components/testimonials/Testimonials";
+import Contact from "./components/contact/Contact";
+import "./app.scss";
 
 const App = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div id="app">
-      <Navbar />
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro />
         <Portfolio />
