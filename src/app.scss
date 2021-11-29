@@ -1,16 +1,24 @@
-#app{
-    height: 100vh;
-}
+#app {
+  height: 100vh;
 
-#app .sections{
+  .sections{
     width: 100%;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 70px);
     background-color: coral;
     position: relative;
-    top:60px;
-}
+    top: 70px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    &::-webkit-scrollbar{
+      display: none;
+    }
 
-#app .sections >*{
-    width: 100%;
-    height: calc(100vh - 60px);
+    > *{
+      width: 100%;
+      height: calc(100vh - 70px);
+      scroll-snap-align: start;
+    }
+  }
 }
