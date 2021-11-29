@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Person, Mail } from "@material-ui/icons";
+import { GitHub, LinkedIn} from "@material-ui/icons";
 import "./navbar.scss";
 
 const Navbar = ({menuOpen, setMenuOpen}) => {
@@ -11,14 +11,12 @@ const Navbar = ({menuOpen, setMenuOpen}) => {
           <a href="#intro" className="logo">
             Laura Alabau
           </a>
-          <div className="itemContainer">
-            <Person className="icon" />
-            <span>123456789</span>
-          </div>
-          <div className="itemContainer">
-            <Mail className="icon" />
-            <span>mail@mail.com</span>
-          </div>
+          <a href="!#" className="itemContainer">
+            <GitHub className="icon1" />
+          </a>
+          <a href="!#" className="itemContainer">
+            <LinkedIn className="icon2" />
+          </a>
         </div>
         <div className="right">
             <div className="hamburger" onClick={()=>setMenuOpen(!menuOpen)}>

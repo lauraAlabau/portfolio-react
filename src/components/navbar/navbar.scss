@@ -30,18 +30,17 @@
       }
 
       .itemContainer{
+        color: inherit;
         display: flex;
         align-items: center;
         margin-left: 30px;
 
-        .icon{
-          font-size: 18px;
+        .icon1{
+          font-size: 25px;
           margin-right: 5px;
         }
-
-        span{
-          font-size: 15px;
-          font-weight: 500;
+        .icon2{
+          font-size: 30px;
         }
 
       }
