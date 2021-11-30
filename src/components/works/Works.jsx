@@ -52,7 +52,7 @@ const Works = () => {
                   </div>
                   <h2>{d.title}</h2>
                   <p>{d.description}</p>
-                  <span>Projects</span>
+                  <span><a href="#portfolio">Projects</a></span>
                 </div>
               </div>
               <div className="right">

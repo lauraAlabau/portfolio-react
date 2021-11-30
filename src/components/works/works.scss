@@ -1,7 +1,7 @@
 @import "../../global.scss";
 
 #works {
-  background-color: $secondaryColor;
+  background-color: #707b97;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -13,17 +13,17 @@
       cursor: pointer;
 
       &.left{
-          left: 100px;
+          left: 250px;
           transform: rotateY(180deg);
       }
 
       &.right{
-          right: 100px;
+          right: 250px;
       }
   }
 
   .slider {
-    height: 350px;
+    height: 450px;
     display: flex;
     position: absolute;
     left: 0;
@@ -36,7 +36,7 @@
       justify-content: center;
 
       .item {
-        width: 700px;
+        width: 950px;
         height: 100%;
         background-color: #fff;
         display: flex;
@@ -84,6 +84,11 @@
               width: fit-content;
               padding: 5px 10px;
               cursor: pointer;
+
+              a{
+                  text-decoration: none;
+                  color: inherit;
+              }
             }
           }
         }
