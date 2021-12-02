@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div id="app">
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
+      <Menu menuOpen={menuOpen}/>
       <div className="sections">
         <Intro />
         <Portfolio />
