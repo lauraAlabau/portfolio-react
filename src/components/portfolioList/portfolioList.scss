@@ -6,6 +6,10 @@
   padding: 7px 20px;
   cursor: pointer;
 
+  @include mobile {
+    margin-right: 0;
+  }
+
   &.active {
     background-color: $mainColor;
     color: #fff;

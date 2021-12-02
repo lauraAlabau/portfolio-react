@@ -10,53 +10,61 @@
   z-index: 2;
   transition: all 1s ease;
 
-  .wrapper{
+  .wrapper {
     padding: 10px 30px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 
-    .left{
+    .left {
       display: flex;
       align-items: center;
 
-      .logo{
-          font-size: 40px;
+      .logo {
+        font-size: 40px;
+        font-weight: 900;
+        text-decoration: none;
+        color: inherit;
+        margin-right: 40px;
+
+        @include mobile {
+          font-size: 25px;
           font-weight: 900;
-          text-decoration: none;
-          color: inherit;
-          margin-right: 40px;
+          margin-right: 10px;
+        }
       }
 
-      .itemContainer{
+      .itemContainer {
         color: inherit;
         display: flex;
         align-items: center;
         margin-left: 30px;
 
-        .icon1{
+        @include mobile {
+          margin-left: 20px;
+        }
+
+        .icon1 {
           font-size: 25px;
           margin-right: 5px;
         }
-        .icon2{
+        .icon2 {
           font-size: 30px;
         }
-
       }
     }
 
-    .right{
-
-      .hamburger{
+    .right {
+      .hamburger {
         width: 25px;
         height: 21px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
-        
-        span{
+
+        span {
           width: 100%;
           height: 3px;
           background-color: $mainColor;
@@ -67,17 +75,17 @@
     }
   }
 
-  &.active{
-    .hamburger{
-      span{
-        &:first-child{
+  &.active {
+    .hamburger {
+      span {
+        &:first-child {
           transform: rotate(45deg);
           background-color: #fff;
         }
-        &:nth-child(2){
+        &:nth-child(2) {
           opacity: 0;
         }
-        &:last-child{
+        &:last-child {
           transform: rotate(-45deg);
           background-color: #fff;
         }
